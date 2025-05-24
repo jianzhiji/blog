@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESP32 Web Server</title>
+    <style>
+      body {
+        background-image: url("/pic.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #202020;
+        color: #fff;
+        text-align: center;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        box-sizing: border-box;
+        font-family: Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+      }
+
+      h1 {
+        font-size: 5vw; /* 根据屏幕宽度调整 */
+        margin-bottom: 10vh;
+      }
+
+      footer {
+        padding: 20px;
+        border-top: 1px solid #444;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 3vw;
+      }
+
+      footer small {
+        color: #aaa;
+        line-height: 1.5em;
+        word-break: break-word;
+      }
+
+      @media (max-width: 480px) {
+        footer {
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>ESP32嵌入图片展示</h1>
+
+    <footer>
+      天雾雨涟水
+      <small>简介：ESP32静态Web项目练习</small>
+      <small>本页面为静态网站，部署在ESP32S3(服务器)：</small>
+      <small style="color: #0cc79e"
+        >ESP32s3做服务器（AP模式），手机连接esp热点，浏览器进入192.168.4.1</small
+      >
+      <small style="color: #595d5c">html的内容很多，之后再慢慢优化界面</small>
+      <small style="color: #595d5c">将就着先用^V^</small>
+      <small style="color: #595d5c">给自己引流~</small>
+      <small style="color: #97a19e">个人博客链接:</small>
+      <small style="color: #25c099"
+        >https://www.cnblogs.com/tianwuyvlianshui/</small
+      >
+      <small style="color: #97a19e">Gitee链接:</small>
+      <small style="color: #25c099">https://gitee.com/sword-level_0/</small>
+      <small style="color: #97a19e">Github链接:</small>
+      <small style="color: #25c099">https://github.com/jianzhiji/</small>
+    </footer>
+  </body>
+</html>
